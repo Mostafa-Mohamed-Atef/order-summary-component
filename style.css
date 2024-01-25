@@ -49,7 +49,6 @@ h2{
     display: block;
 }
 .card:hover{
-    transform: scale(1.1);
     box-shadow: 0 0 30px gray;
 
 }
