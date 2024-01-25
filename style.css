@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Red+Hat+Display:wght@500;700;900&family=Style+Script&display=swap');
+
+:root{
+ --Pale-blue: hsl(225, 100%, 94%);
+
+--Bright-blue: hsl(245, 75%, 52%);
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+
+--Desaturated-blue: hsl(224, 23%, 55%);
+
+--Dark-blue: hsl(223, 47%, 23%);
+
+--Font-size: 16px;
+
+--Weights: 500, 700, 900;
+
+--new: hsla(225, 100%, 94%,0.5);
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+body{
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    position:relative;
+    margin: auto;
+    margin-top: 25px;
+}
+h2{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 32px; 
+    padding-bottom: 20px;   
+}   
+.card{
+    background-color:var(--Very-pale-blue);
+    width: 450px;
+    border-radius: 15px;
+    margin: 100px auto;
+    position: relative;
+    display: block;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px gray;
+
+}
+.container{
+    padding: 10% 10% 10% 10%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.container > *{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image{
+    width:100%;
+    height: 220px;
+    overflow:hidden; 
+    border-radius: 15px 15px 0 0;
+}
+p{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    padding-bottom: 20px;   
+
+}
+.proceeding-button{
+    text-align: center;
+    background-color: var(--Bright-blue);
+    color: white;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: 700;
+    border:none;
+    width:100%;
+    transition: 0.3s ease-in-out;
+
+}
+.proceeding-button:hover{
+    background-color: hsla(245, 75%, 52%,0.2);
+    color:var(--Bright-blue);
+    box-shadow: 0 0 30px gray;
+
+}
+.plan{
+    background-color: var(--new);
+    border-radius: 15px;
+}
+.plan-discribtion{
+    margin: 0 4rem 0 1rem;
+    padding-top:1rem;
+}
+a:hover{
+    opacity: 0.7;
+}
+.cancel-button{
+    border: none;
+    border-radius: 100%;
+    padding: 0.5rem 1.1rem;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    margin: 1rem 1rem 0 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+
+}
+.cancel-button:hover{
+    box-shadow: 0 0 30px gray;
+    color: var(--Desaturated-blue);
+    transform: scale(1.1);
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (width < 720px) {
+    h2{
+        font-size: 1.5r;
+    }
+    .card{
+        flex-basis: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+    
+}
